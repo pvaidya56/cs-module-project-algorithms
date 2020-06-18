@@ -2,10 +2,13 @@
 Input: a List of integers where every int except one shows up twice
 Returns: an integer
 '''
+# add each number once and multiply the sum by 2, this will be twice the sum of each element in the array
+# subtract the sum of the whole array from twice the sum == number that comes first in the array
+
 def single_number(arr):
     # Your code here
+    return (2 * sum(set(arr))) - sum((arr))  
 
-    pass
 
 
 if __name__ == '__main__':
